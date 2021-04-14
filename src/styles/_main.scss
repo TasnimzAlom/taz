@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@500&display=swap');
+
+$primary-color:#FAD70D;
+$secondary-color:#B10202;
+$lighter-color:#FFFFFF;
+$darker-color:#131313;
+$black:#000000;
+$my-image: url("https://i.ibb.co/FwG262P/C6669-E99-F283-4-ED4-9-FD8-0-B44-E3-A28554.png");
+
+@mixin sizing{
+    min-width:100vw;
+    min-height:100vh;
+    height:100%;
+    width:100%;
+}
+
+@mixin font{
+    font-family: 'Oswald', sans-serif;
+}
+
+@mixin easeout{
+    transition: all .5s ease-out;
+  }
+
+@mixin display{
+    display:flex;
+
+}  
+
+@mixin bg-yellow{
+    background: rgb(250,215,13);
+    background: linear-gradient(180deg, rgba(250,215,13,1) 31%, rgba(250,215,13,1) 33%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 41%, rgba(250,215,13,1) 41%);
+}

@@ -1,0 +1,125 @@
+@import "styles/main";
+@import "styles/about";
+@import "styles/projects";
+@import "styles/config";
+@import "styles/skills";
+@import "styles/contact";
+@import "styles/mobile";
+
+*{
+  margin:0 auto;
+  padding:0 auto;
+
+}
+
+html body{
+  min-width:100vw;
+  min-height:100vh;
+  width:100%;
+  height:100%;
+  display:flex;
+
+}
+
+body{
+  @include font;
+  margin:0 auto;
+  padding:0 auto;
+  overflow-x: hidden;
+
+
+}
+
+.App{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+}
+
+.proj-menu{
+  @include display;
+  background-color: rgb(19, 19, 19);
+  padding:.5rem 0;
+  border-bottom:1px solid rgba(59, 57, 57, 0.219);
+  width:100%;
+  z-index:20;
+  position:fixed;
+  right:.01rem;
+}
+
+.bg-img{
+  @include bg-yellow;
+  padding:.5rem;
+  width: 100%;
+  height:50rem;
+}
+
+.home{
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top:2.5rem;
+}
+
+h1{
+  margin:0;
+  &.name{
+    font-size:7rem;
+    color:$darker-color;
+    text-shadow:$secondary-color 1px 1px 1px; 
+    
+  }
+}  
+
+.title{
+  z-index:2;
+  position:relative;
+  bottom:27rem;
+  text-align: center;
+}
+
+.text-secondary{
+  color:$darker-color; 
+  text-shadow:$secondary-color 1px 1px 1px; 
+}
+
+.taz-kill-bill{
+  z-index:1;
+  height:45rem;
+  margin:2rem;
+}
+
+header {
+  z-index:2;
+}
+
+
+
+.change-text{
+  font-size:3rem;
+  color:$secondary-color;
+  text-shadow:black 1px 2px 4px; 
+  margin-left:1rem;
+
+}
+
+.contact-link{
+  color:$secondary-color;
+}
+
+::-webkit-scrollbar{
+  width:12px;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background:rgba(255, 255, 255, 0.993);
+  border-radius: 1rem;;
+}
+
+::-webkit-scrollbar-track{
+  background:rgb(22, 20, 20);
+}

@@ -1,0 +1,60 @@
+$layout-breakpoint-large: 1160px;
+$layout-breakpoint-medium: 1000px;
+$layout-breakpoint-small: 960px;
+$layout-breakpoint-smaller: 800px;
+
+@media (max-width: $layout-breakpoint-large) {
+    body{
+        max-width:1160px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+  .app{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    
+  }
+
+  .bg-img{
+      height:80rem;
+      min-width:100%;
+  }
+  .taz-kill-bill{
+      height:60rem;
+
+  }
+  .name {
+      position:relative;
+      bottom:2rem;
+      line-height:3rem;
+  }
+
+  .menu-div{
+      min-width:100vw;
+      min-height:1400px;
+      padding:0;
+      display: flex;
+      justify-content: center;
+      flex-direction:column;
+  }
+
+  .red-half{
+  margin:0;
+  min-width:100%;
+  }
+
+  .black-half{
+    margin:0;
+    min-width:100%;
+
+    }
+
+    .slash-text{
+        padding:0 235px;
+    }
+
+
+}

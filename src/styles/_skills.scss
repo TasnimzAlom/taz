@@ -1,0 +1,50 @@
+
+.skills{
+    padding:0 .5rem;
+    width:100%;
+    text-align: center;
+    font-size: 5rem;
+    background-color: black;
+    color:$lighter-color;
+    text-shadow:rgb(238, 4, 4) 1px 8px 15px;
+}
+
+.skills-stack{
+    padding:0 .5rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: $secondary-color;
+}
+
+.stack{
+    // border:1px solid black;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    letter-spacing: .2rem;
+    font-weight:900;
+    text-shadow:silver 3px 3px 8px;
+}
+
+.sword-stack:hover{
+    text-shadow:rgb(255, 255, 255) 3px 3px 8px;
+}
+
+.base{
+    writing-mode: vertical-rl;
+    text-shadow:rgb(78, 35, 35)  3px 3px 8px;
+}
+
+.stem{
+    color:black;
+    text-shadow:rgb(78, 35, 35) 3px 3px 8px;
+}
+.stem:hover{
+    text-shadow:rgb(175, 91, 12) 3px 3px 8px;
+}
+.base:hover{
+    text-shadow:rgb(119, 76, 35) 3px 3px 8px;
+}

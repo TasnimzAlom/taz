@@ -1,0 +1,18 @@
+
+.contact-page{
+    background: url("https://i.ibb.co/S7kz6Y2/pexels-photo-130850.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100vw;
+}
+
+.overlay{
+    height:100vh;
+    width:100vw;
+    background: rgb(241,223,133);
+    background: radial-gradient(circle, rgba(12, 12, 12, 0.561) 0%, rgba(0,0,0,1) 97%);
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+}
