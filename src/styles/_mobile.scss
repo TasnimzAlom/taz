@@ -1,9 +1,9 @@
 $layout-breakpoint-large: 1160px;
 $layout-breakpoint-medium: 1000px;
 $layout-breakpoint-small: 960px;
-$layout-breakpoint-smaller: 800px;
+$layout-breakpoint-smaller: 300px;
 
-@media (max-width: $layout-breakpoint-large) {
+@media (min-width: $layout-breakpoint-large) {
     body{
         max-width:1160px;
         display:flex;
@@ -23,7 +23,7 @@ $layout-breakpoint-smaller: 800px;
       min-width:100%;
   }
   .taz-kill-bill{
-      height:60rem;
+      height:2rem;
 
   }
   .name {
@@ -57,4 +57,38 @@ $layout-breakpoint-smaller: 800px;
     }
 
 
+}
+
+@media (min-width: $layout-breakpoint-smaller) {
+    body 
+    html{
+        max-width:300px;
+        width:300px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project-menu {
+        font-size: 10rem;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        height:50rem;
+
+    }
+    .app 
+    .home 
+    .bg-img {
+        background-color: aliceblue;
+        max-width:300px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    .taz-kill-bill{
+        z-index:1;
+        height:5rem;
+        margin:0rem;
+      }
 }
