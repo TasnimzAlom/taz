@@ -3,123 +3,88 @@
 @import "styles/projects";
 @import "styles/config";
 @import "styles/skills";
+@import "styles/burger";
+@import "styles/Navbar";
 @import "styles/contact";
-@import "styles/mobile";
+@import "styles/footer";
 
-*{
-  margin:0 auto;
-  padding:0 auto;
-
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-html body{
-  min-width:100vw;
-  min-height:100vh;
-  width:100%;
-  height:100%;
-  display:flex;
-
+::-webkit-scrollbar-track {
+  background: #000000;
 }
 
-body{
-  @include font;
-  margin:0 auto;
-  padding:0 auto;
-  overflow-x: hidden;
+::-webkit-scrollbar-thumb {
+  background: rgb(255,218,0);
+background: linear-gradient(180deg, rgba(255,218,0,1) 1%, rgba(255,0,0,1) 48%, rgba(0,0,0,1) 100%);
+border-radius:.5rem;
+}
 
-
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(255,218,0,1) 100%);
 }
 
 .App{
-margin:0;
-padding:0;
-width:100%;
-height:100%;
+  max-width:100%;
 }
 
 .proj-menu{
-  @include display;
-  background-color: rgb(19, 19, 19);
-  padding:.5rem 0;
-  border-bottom:1px solid rgba(59, 57, 57, 0.219);
-  width:100%;
-  z-index:20;
-  position:fixed;
-  right:.01rem;
+position:fixed;
+width:100%;
 }
+svg{
+margin:0 1rem;
+ }
 
-.bg-img{
-  @include bg-yellow;
-  padding:.5rem;
-  width: 100%;
-  height:50rem;
-}
-
-.home{
-  height:100%;
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top:2.5rem;
-}
-
-h1{
-  margin:0;
-  &.name{
-    font-size:7rem;
-    color:$darker-color;
-    text-shadow:$secondary-color 1px 1px 1px; 
-    
-  }
-}  
-
-.title{
-  z-index:2;
-  position:relative;
-  bottom:27rem;
+ 
+.menu-bars{
+  font-size:1rem;
   text-align: center;
 }
-
-.text-secondary{
-  color:$darker-color; 
-  text-shadow:$secondary-color 1px 1px 1px; 
-}
-
-.taz-kill-bill{
-  z-index:1;
-  height:45rem;
-  margin:2rem;
-}
-
-header {
-  z-index:2;
+.home{
+  background: rgb(255,218,0);
+ 
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  height:100%;
+  max-width:100%;
 }
 
 
 
-.change-text{
-  font-size:3rem;
-  color:$secondary-color;
-  text-shadow:black 1px 2px 4px; 
-  margin-left:1rem;
-
+a:hover{
+ text-decoration: rgb(204, 44, 44) solid underline;
+ 
 }
 
-.contact-link{
-  color:$secondary-color;
-}
+.red-text{
+  color:rgb(204, 44, 44);
 
-::-webkit-scrollbar{
-  width:12px;
+}
+.red-text:hover{
+  text-decoration: whitesmoke solid underline;
 }
 
 
-::-webkit-scrollbar-thumb{
-  background:rgba(255, 255, 255, 0.993);
-  border-radius: 1rem;;
+.hero{
+  height:75%;
+  width:70%;
+  margin:25% 0%;
 }
 
-::-webkit-scrollbar-track{
-  background:rgb(22, 20, 20);
+a{
+  color:whitesmoke;
+  text-decoration: none;
 }
+
+ a:hover {
+  color:red;
+
+}
+
+@import "styles/mobile";

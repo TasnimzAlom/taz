@@ -1,21 +1,12 @@
 import React from 'react'
+import ContactForm from "./ContactForm"
 
 const Contact = () => {
     return (
-        <div className="contact-page">
-            <div className="overlay">
-                <div>
-                  <h1>HOW TO REACH ME</h1>  
-                  <adress>
-                      Tasnimz.alom@gmail.com<br/>
-                      1(347)-286-2255
+        <div className="contact" id="contact-section">
+                      <h1 className="skills">Contact Me</h1>
 
-
-
-                  </adress>
-                </div>            
-            </div>
-            
+            <ContactForm/>
         </div>
     )
 }

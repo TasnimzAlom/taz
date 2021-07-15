@@ -1,77 +1,25 @@
 
-a{
-    color:$lighter-color;
-    text-decoration: none;
-    font-size:2rem;
-  }
-
-.menu-div{
-    @include display;
-    height:80vh;
-    width:101%;
-    background:$primary-color;
-    border:1px solid black;
-    box-shadow:rgba(0, 0, 0, 0.493) -2px -5px 15px;
-
-  }
-  
-  .taz{
-    height:35rem;
-    max-width:100%;
-    max-height:100%;
-  }
-  .about{
-    max-width:100%;
-    max-height:100%;
-  }  
-  
-  .slash-text{
-    height:6rem;
-    width:22rem;
-    padding:2rem;
-  
-  }
-
-  .red-half{
-    background: $secondary-color;
-    color:$lighter-color;
-    font-size:2rem;
-    height:100%;
-    min-width:50%;
-    max-width:50%;
-
-  
-  }
-
-  .red-half{
-
-    .icons a{
-      font-size: 4rem;
-      padding: 1rem;
-      color:$black;
-      margin:2.5rem;
-    }
-    .icon2:hover {
-      color:$lighter-color;
-      @include easeout;
-    }
-  }
-
-  .black-half{
-      background:$black;
-      color:$lighter-color;
-      height:100%;
-      min-width:50%;
-      max-width:50%;
-      font-size: 2rem;
-  }
-  .about-boxes{
-    @include display;
+#about-section{
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #000000 0%, #585858 46%, #292929 100%);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display:flex;
     justify-content: center;
-    flex-direction: column;
-    height:90%;
-    width:70%;
-  }
 
+}
 
- 
+.taz{
+    max-width:200px;
+}
+
+.abt-txt{
+    background:#FFDA00;
+    display:flex;
+    justify-content: center;
+    padding:2rem;
+}
+
+.abt-box{
+    width:280px;
+}

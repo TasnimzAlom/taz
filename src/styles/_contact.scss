@@ -1,18 +1,80 @@
 
-.contact-page{
-    background: url("https://i.ibb.co/S7kz6Y2/pexels-photo-130850.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:100vh;
-    width:100vw;
+
+
+.wrapper{
+  width: 100%;
+  background-color: #000000;
+  background-image: linear-gradient(43deg, #000000 0%, #585858 46%, #292929 100%);
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.overlay{
-    height:100vh;
-    width:100vw;
-    background: rgb(241,223,133);
-    background: radial-gradient(circle, rgba(12, 12, 12, 0.561) 0%, rgba(0,0,0,1) 97%);
-    color:white;
-    display:flex;
-    justify-content: flex-end;
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid#d6a204;
+  padding: 10px;
+  color: #c9c7c2;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #e7e5de;
+
+
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #e7e5de;
+
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #e7e5de;
+
+}
+
+.btn {
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
 }

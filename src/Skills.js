@@ -2,72 +2,66 @@ import React from 'react'
 
 const Skills = () => {
     return (
-        <div >
+        <section  className="skills-section" id="skills-section">
+        <div className="main">
         <h1 className="skills">SKILLS</h1>
         <div className="skills-stack">
             
             <div className="stack">
+                <span className="first">
             <div>  
-                <span className="sword-stack">GIT/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">HTML/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">JAVASCRIPT/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">REACT/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">REACT-REDUX/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">REACT/</span>
-                
-            </div>
-             <div>  
-                <span className="sword-stack">CSS/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">TAILWIND/</span>
-                
-            </div>
-            <div>  
-                <span className="sword-stack">SASS/</span>
+                <span className="small-stem">GIT </span>
+    
                 
             </div> 
             <div>  
-                <span className="sword-stack">FIGMA/</span>
+                <span className="first-base">JAVASCRIPT</span>
                 
+            </div>
+            <div className="sword-stack-a">  
+                <span >/ HTML /</span>          
+                <span>REACT /</span>
+                <span >REACT-REDUX </span>
+                
+           </div>
+            </span>
+            <span className="second">
+             <div className="sword-stack"> 
+                <span> CSS \</span>
+                <span>SASS \</span>
+                <span >ADOBE-CLOUD \</span>  
             </div>
             <div>  
-                <span className="base">\ADOBE CLOUD/</span>
+                <span className="second-base">TAILWIND</span>
                 
-            </div>
+            </div>  
+            <div >
+                <span className="small-stem-2">FIGMA</span>
+               </div> 
+              </span>
            
-            <div>  
-                <span className="stem">| JEST/</span>
-                <span></span>
+           
+         
+            <span className="third">
+            <div >  
+                <span className="small-stem">JEST</span>
+               
             </div>
-            <div>  
-                <span className="stem">FIREBASE/</span>
-                <span></span>
-            </div>
-            <div>  
-                <span className="stem">AND MORE!</span>
-                <span></span>
-            </div>
-            
+                <div>  
+                <span className="third-base">CYPRESS</span>
+               
+            </div>      
+            <div className="sword-stack-a">  
+                <span>/ FIREBASE</span>
+                <span>/ & MORE ON RESUME </span>
+               
+            </div> 
+            </span>
+        
             </div>
             </div>
         </div>
+        </section>
     )
 }
 

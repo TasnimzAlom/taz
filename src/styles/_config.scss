@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    @include font;
+  }
+html{
+  scroll-behavior:smooth;
+  width:100%;
+}
+body{
+    max-width:100%;
+
+  }
+  

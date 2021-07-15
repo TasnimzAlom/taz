@@ -1,50 +1,161 @@
-
+.main{
+    height:100%;
+}
 .skills{
-    padding:0 .5rem;
+ 
     width:100%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 1.2rem;
     background-color: black;
     color:$lighter-color;
-    text-shadow:rgb(238, 4, 4) 1px 8px 15px;
+
 }
 
 .skills-stack{
-    padding:0 .5rem;
+    max-width:100%;
+    padding:0 .1rem;
     width:100%;
     display: flex;
     justify-content: center;
+    flex-direction:column;
     align-items: center;
-    min-height:100vh;
-    background-color: $secondary-color;
+    min-height:100%;
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #000000 0%, #585858 46%, #292929 100%);
 }
 
-.stack{
+.first{
     // border:1px solid black;
-    font-size: 1.5rem;
+    font-size: .7rem;
     display:flex;
     align-items: center;
-    letter-spacing: .2rem;
     font-weight:900;
-    text-shadow:silver 3px 3px 8px;
+    padding:.1rem;
+ 
+}
+.second{
+    // border:1px solid black;
+    font-size: .7rem;
+    display:flex;
+    align-items: center;
+    font-weight:900;
+    padding:.5rem 0;
+    z-index:1;
+}
+.third{
+    // border:1px solid black;
+    font-size: .7rem;
+    display:flex;
+    align-items: center;
+
+    font-weight:900;
+    padding:.5rem 0;
+
+}
+
+.sword-stack{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: 2px;
+    background-image: linear-gradient(to right, #a8a0a0 0%, #ffffff  51%, #7a7575  100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);           
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    border-radius: 0 0 0 4rem;
+    padding:0 5px;
+    display: block;
+  
+}
+
+span{
+    padding:0 7px;
+}
+
+
+.sword-stack-a{
+    height:20%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    // word-spacing: .1rem;
+    background-image: linear-gradient(to right, #a8a0a0 0%, #ffffff  51%, #7a7575  100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);           
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    border-radius: 0 0  25px 0;
+    padding:0 1px;
+    display: block;
+ 
+   
 }
 
 .sword-stack:hover{
-    text-shadow:rgb(255, 255, 255) 3px 3px 8px;
+    background-position: right center; /* change the direction of the change here */
+
 }
 
-.base{
+.sword-stack-a:hover{
+    background-position: right center; /* change the direction of the change here */
+
+}
+
+.first-base{
     writing-mode: vertical-rl;
-    text-shadow:rgb(78, 35, 35)  3px 3px 8px;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:.9rem 0;
+    border-radius:5rem 0 0 5rem;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    z-index:1;
+   
+}
+.second-base{
+    writing-mode: vertical-rl;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:.9rem 0;
+    border-radius:0 5rem  5rem 0;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    
+
 }
 
-.stem{
-    color:black;
-    text-shadow:rgb(78, 35, 35) 3px 3px 8px;
+.third-base{
+    writing-mode: vertical-rl;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:.9rem 0;
+    border-radius:5rem 0 0 5rem;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
 }
-.stem:hover{
-    text-shadow:rgb(175, 91, 12) 3px 3px 8px;
+
+.small-stem{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: .1rem;
+    padding-left:.1rem;
+    font-weight:900;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    padding:0 .7rem ;
+    border-radius:5rem 0 0 5rem;
+    
 }
-.base:hover{
-    text-shadow:rgb(119, 76, 35) 3px 3px 8px;
+
+
+.small-stem-2{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: .1rem;
+    padding-left:.1rem;
+    font-weight:900;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    padding:0 .5rem ;
+    border-radius:0 5rem 5rem 0;
+    
 }

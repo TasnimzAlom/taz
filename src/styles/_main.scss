@@ -7,6 +7,18 @@ $darker-color:#131313;
 $black:#000000;
 $my-image: url("https://i.ibb.co/FwG262P/C6669-E99-F283-4-ED4-9-FD8-0-B44-E3-A28554.png");
 
+
+// light theme:
+@mixin lightmode(){
+    background: rgb(250,215,13);
+    
+}
+
+@mixin darkmode(){
+    background: whitesmoke;
+
+}
+
 @mixin sizing{
     min-width:100vw;
     min-height:100vh;
@@ -24,6 +36,8 @@ $my-image: url("https://i.ibb.co/FwG262P/C6669-E99-F283-4-ED4-9-FD8-0-B44-E3-A28
 
 @mixin display{
     display:flex;
+    justify-items: space-between;
+    align-items: center;
 
 }  
 

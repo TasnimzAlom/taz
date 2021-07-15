@@ -1,94 +1,399 @@
+$layout-breakpoint-4k: 2800px;
+$layout-breakpoint-largest: 2500px;
+$layout-breakpoint-larger2: 2000px;
+$layout-breakpoint-larger: 1500px;
 $layout-breakpoint-large: 1160px;
 $layout-breakpoint-medium: 1000px;
+$layout-breakpoint-swords: 860px;
+
 $layout-breakpoint-small: 960px;
-$layout-breakpoint-smaller: 300px;
 
-@media (min-width: $layout-breakpoint-large) {
-    body{
-        max-width:1160px;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+$layout-breakpoint-smaller: 620px;
+$layout-breakpoint-smallest: 450px;
 
-  .app{
-      display:flex;
-      justify-content: center;
-      flex-direction: column;
-    
-  }
 
-  .bg-img{
-      height:80rem;
-      min-width:100%;
-  }
-  .taz-kill-bill{
-      height:2rem;
+@media screen and(min-width:$layout-breakpoint-smallest) {
+        
+.first{
+    // border:1px solid black;
+    font-size: 1rem;
+  
+}
+.second{
+    // border:1px solid black;
+    font-size: 1rem;
+    z-index:1;
+}
+.third{
+    // border:1px solid black;
+    font-size: 1rem;
+   
+}
+.sword-stack,
+.sword-stack-a{
+    padding:0 2rem;
+}
 
-  }
-  .name {
-      position:relative;
-      bottom:2rem;
-      line-height:3rem;
-  }
-
-  .menu-div{
-      min-width:100vw;
-      min-height:1400px;
-      padding:0;
-      display: flex;
-      justify-content: center;
-      flex-direction:column;
-  }
-
-  .red-half{
-  margin:0;
-  min-width:100%;
-  }
-
-  .black-half{
-    margin:0;
-    min-width:100%;
-
-    }
-
-    .slash-text{
-        padding:0 235px;
-    }
-
+.small-stem,
+.small-stem-2{
+    padding:0 2rem;
 
 }
 
-@media (min-width: $layout-breakpoint-smaller) {
-    body 
-    html{
-        max-width:300px;
-        width:300px;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
+.hero{
+    height:70%;
+    width:85%;
+    margin:25% 2%;
+  }
+  .project-section img{
+    width:350px;        
+ }
+ .abt-box{
+    width:480px;
+}
+}
+@media screen and (min-width: $layout-breakpoint-smaller) {
+    // .desktop-menu{
+    //     width:100%;
+    //     display:flex;
+    //     flex-direction:column;
+    //     align-content: center;
+      
+    // }
+    
+   a{
+       font-size: 1rem;
+   }
+      .first{
+        // border:1px solid black;
+        font-size: 1rem;
+      
     }
-    .project-menu {
-        font-size: 10rem;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        height:50rem;
+    .second{
+        // border:1px solid black;
+        font-size: 1rem;
+        z-index:1;
+    }
+    .third{
+        // border:1px solid black;
+        font-size: 1rem;
+       
+    }
+    .sword-stack,
+    .sword-stack-a{
+        padding:0 3rem;
+    }
+
+    .small-stem,
+    .small-stem-2{
+        padding:0 2rem;
 
     }
-    .app 
-    .home 
-    .bg-img {
-        background-color: aliceblue;
-        max-width:300px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+    .hero{
+        height:75%;
+        width:70%;
+        margin:15%;
+      }
+      .skills{
+          font-size:2rem;
+      }
+      .abt-box{
+        width:580px;
     }
   
-    .taz-kill-bill{
+}
+
+
+@media screen and (min-width:700px){
+    
+    .menu-bars{
+        display:none;
+    }
+  
+    .desktop-menu{
+        display: flex;
+        flex-direction:row;
+    }
+    .project-section img{
+        width:400px;
+        transition: 1s ease-in-out;
+        border:5px solid black;
+        
+     }
+}
+@media screen and(min-width:$layout-breakpoint-small) {
+    // .desktop-menu{
+    //     width:100%;
+    //     display: flex;
+        
+    //     justify-content:center;
+    //     font-size:1rem;
+    //     font-weight:900;
+    //     padding-bottom:1rem;
+    //   }
+    //   .menu-bars{
+    //     display:none;
+    // }
+    .hero{
+        height:75%;
+        width:70%;
+        margin:30%;
+
+      }
+      .abt-box{
+        width:780px;
+    }
+}
+
+
+@media screen and(min-width:$layout-breakpoint-swords) {
+    
+.sword-stack{
+    height:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left:.2rem;
+    background-image: linear-gradient(to right, #a8a0a0 0%, #ffffff  51%, #7a7575  100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);           
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    border-radius: 0 0 0 4rem;
+    padding:0 5rem;
+    display: block;
+}
+
+
+
+.sword-stack-a{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: .1rem;
+    padding-left:.2rem;
+    background-image: linear-gradient(to right, #a8a0a0 0%, #ffffff  51%, #7a7575  100%);
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);           
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    border-radius: 0 0  4rem 0;
+    padding:0 5rem;
+    display: block;
+}
+
+.sword-stack:hover{
+    background-position: right center; /* change the direction of the change here */
+
+}
+
+.sword-stack-a:hover{
+    background-position: right center; /* change the direction of the change here */
+
+}
+
+.first-base{
+    writing-mode: vertical-rl;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:3rem 0;
+    border-radius:5rem 0 0 5rem;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+}
+.second-base{
+    writing-mode: vertical-rl;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:3rem 0;
+    border-radius:0 5rem  5rem 0;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+}
+
+.third-base{
+    writing-mode: vertical-rl;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    padding:3rem 0;
+    border-radius:5rem 0 0 5rem;
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+}
+
+.small-stem{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: .1rem;
+    padding-left:.2rem;
+    font-weight:900;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    padding:0 3rem ;
+    border-radius:5rem 0 0 5rem;
+    
+}
+
+
+.small-stem-2{
+    display: flex;
+    flex-wrap: nowrap;
+    word-spacing: .1rem;
+    padding-left:.2rem;
+    font-weight:900;
+    color:goldenrod;
+    background-color: rgb(32, 16, 6);
+    box-shadow: 0 5px 20px rgb(14, 13, 13);
+    padding:0 3rem ;
+    border-radius:0 5rem 5rem 0;
+    
+}
+.hero{
+    height:75%;
+    width:70%;
+    margin:15% 2%;
+  }
+  .abt-box{
+    width:780px;
+}
+
+}
+@media screen and(min-width:$layout-breakpoint-medium) {
+    .skills{
+        font-size: 3rem;
+    }
+
+    .first{
+        // border:1px solid black;
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        padding: 6rem 0;
+      
+    }
+    .second{
+        // border:1px solid black;
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        padding: 6rem 0;
         z-index:1;
-        height:5rem;
-        margin:0rem;
+    }
+    .third{
+        // border:1px solid black;
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        padding: 6rem 0;
+    }
+    .hero{
+        height:70%;
+        width:50%;
+        margin:20%;
+      }
+      .container-1{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .project-section img{
+        width:450px;        
+     }
+}
+
+@media screen and(min-width:$layout-breakpoint-large) {
+   .desktop-menu{
+       width:100%;
+      
+   }
+   .skills-stack{
+       height:100%;
+      
+   }
+    .first{
+        // border:1px solid black;
+    
+        letter-spacing: .3rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+      
+    }
+    .second{
+        // border:1px solid black;
+
+        letter-spacing: .3rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+        z-index:1;
+    }
+    .third{
+        // border:1px solid black;
+
+        letter-spacing: .3rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    .hero{
+        margin:10% 15% 15% 15%;
+      }
+    
+}
+@media screen and(min-width:$layout-breakpoint-larger) {
+   
+    .hero{
+        height:75%;
+        width:35%;
+        
+      }
+     
+.menu-div{
+  @include display;
+  justify-content: center;
+  flex-direction: row;
+  height:100%;
+  width:100%;
+}
+.red-half{
+    flex-basis:50%;
+    height:100%;
+    padding:3.5%;
+    font-size: 2.5rem;
+
+}
+.black-half{
+    height:100%;
+    flex-basis:50%;
+    font-size: 2.5rem;
+    padding:3%;
+}
+
+}
+@media screen and(min-width:$layout-breakpoint-larger2) {
+    .hero{
+        height:75%;
+        width:35%;
+        
       }
 }
+
+
+@media screen and(min-width:$layout-breakpoint-largest) {
+    .hero{
+        height:65%;
+        width:30%;
+        margin:7%;
+      }
+    .first{
+        // border:1px solid black;
+        font-size: 3rem;
+        letter-spacing: .5rem;
+        padding: 6rem 0;
+    }
+    .second{
+        // border:1px solid black;
+        font-size: 3rem;
+        letter-spacing: .5rem;
+        padding: 6rem 0;
+        z-index:1;
+    }
+    .third{
+        // border:1px solid black;
+        font-size: 3rem;
+        letter-spacing: .5rem;
+        padding: 6rem 0;
+       
+    }
+}
+
+
